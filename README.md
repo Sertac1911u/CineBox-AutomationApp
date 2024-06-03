@@ -40,7 +40,16 @@ Tekirdağ Namık Kemal University Software Engineering Project Assignment
 - They cannot make any changes or cancellations.
   
 ## Screenshots
-- ![admin](https://github.com/Sertac1911u/CineBox-AutomationApp/assets/114613689/eacb330a-2f84-4e70-b0c3-2e36d7367e22)
+- ![image](https://github.com/Sertac1911u/CineBox-AutomationApp/assets/114613689/30e0f027-248d-4146-9731-9de9c596a227)
+- ![image](https://github.com/Sertac1911u/CineBox-AutomationApp/assets/114613689/b8d7b7e0-8598-4069-b2db-3c8b9ddcbb74)
+- ![image](https://github.com/Sertac1911u/CineBox-AutomationApp/assets/114613689/18178b60-c917-44a1-a263-469531f54e36)
+
+- ![1](https://github.com/Sertac1911u/CineBox-AutomationApp/assets/114613689/30477bfa-2d07-4c4a-b410-6f749fc5fe19)
+- ![2](https://github.com/Sertac1911u/CineBox-AutomationApp/assets/114613689/5cf01e3b-3727-4d2e-a4ad-c44bb3dd2ee8)
+- ![3](https://github.com/Sertac1911u/CineBox-AutomationApp/assets/114613689/79d892c2-c89e-4a84-b326-abcccf11b45d)
+- ![4](https://github.com/Sertac1911u/CineBox-AutomationApp/assets/114613689/1e5ca905-e57c-4305-88b5-c5966859f7fd)
+- ![5](https://github.com/Sertac1911u/CineBox-AutomationApp/assets/114613689/d0bfc974-d9e2-41c7-b252-b825be2e88d3)
+
 - ![admin1](https://github.com/Sertac1911u/CineBox-AutomationApp/assets/114613689/6ae55470-e497-49ea-b04b-bd9a6fd590c1)
 - ![admin2](https://github.com/Sertac1911u/CineBox-AutomationApp/assets/114613689/afc6f3b4-32d9-422c-bc61-3b11646e3876)
 - ![admin3](https://github.com/Sertac1911u/CineBox-AutomationApp/assets/114613689/9c62f326-5519-4fb5-a6f5-53011c3ad563)
