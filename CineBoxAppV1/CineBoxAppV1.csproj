@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43ACC573-59BE-45C3-B5F0-3E37CAACD03E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CineBoxAppV1</RootNamespace>
+    <AssemblyName>CineBoxAppV1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AiChatList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AiChatList.Designer.cs">
+      <DependentUpon>AiChatList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CinemaRegister.Designer.cs">
+      <DependentUpon>CinemaRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmDetay_UC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmDetay_UC.Designer.cs">
+      <DependentUpon>FilmDetay_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filmListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filmListesi.Designer.cs">
+      <DependentUpon>filmListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filmselecListUnLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filmselecListUnLogin.Designer.cs">
+      <DependentUpon>filmselecListUnLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filmselectList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filmselectList.Designer.cs">
+      <DependentUpon>filmselectList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginedUserPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginedUserPanel.Designer.cs">
+      <DependentUpon>loginedUserPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieDetail.Designer.cs">
+      <DependentUpon>MovieDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieList.Designer.cs">
+      <DependentUpon>MovieList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieRegister.Designer.cs">
+      <DependentUpon>MovieRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mytickets.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mytickets.Designer.cs">
+      <DependentUpon>mytickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaloonRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaloonRegister.Designer.cs">
+      <DependentUpon>SaloonRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectSeat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectSeat.Designer.cs">
+      <DependentUpon>SelectSeat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffList.Designer.cs">
+      <DependentUpon>StaffList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="staffListesi.Designer.cs">
+      <DependentUpon>staffListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffRegister.Designer.cs">
+      <DependentUpon>staffRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticket.Designer.cs">
+      <DependentUpon>Ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ticketcontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ticketcontrol.Designer.cs">
+      <DependentUpon>ticketcontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_AdminLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AdminLogin.Designer.cs">
+      <DependentUpon>UC_AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Ai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Ai.Designer.cs">
+      <DependentUpon>UC_Ai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Ai_Logined.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Ai_Logined.Designer.cs">
+      <DependentUpon>UC_Ai_Logined.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Home.Designer.cs">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_HomeUnLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_HomeUnLogin.Designer.cs">
+      <DependentUpon>UC_HomeUnLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Login.Designer.cs">
+      <DependentUpon>UC_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Register.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Register.Designer.cs">
+      <DependentUpon>UC_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Seans.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Seans.Designer.cs">
+      <DependentUpon>UC_Seans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Seans_Logined.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Seans_Logined.Designer.cs">
+      <DependentUpon>UC_Seans_Logined.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Seat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Seat.Designer.cs">
+      <DependentUpon>UC_Seat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SeatSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SeatSelect.Designer.cs">
+      <DependentUpon>UC_SeatSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Ticket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Ticket.Designer.cs">
+      <DependentUpon>UC_Ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Ticket_Logined.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Ticket_Logined.Designer.cs">
+      <DependentUpon>UC_Ticket_Logined.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsernewPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsernewPanel.Designer.cs">
+      <DependentUpon>UsernewPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPanel.Designer.cs">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AiChatList.resx">
+      <DependentUpon>AiChatList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CinemaRegister.resx">
+      <DependentUpon>CinemaRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmDetay_UC.resx">
+      <DependentUpon>FilmDetay_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filmListesi.resx">
+      <DependentUpon>filmListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filmselecListUnLogin.resx">
+      <DependentUpon>filmselecListUnLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filmselectList.resx">
+      <DependentUpon>filmselectList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginedUserPanel.resx">
+      <DependentUpon>loginedUserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieDetail.resx">
+      <DependentUpon>MovieDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieList.resx">
+      <DependentUpon>MovieList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieRegister.resx">
+      <DependentUpon>MovieRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mytickets.resx">
+      <DependentUpon>mytickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SaloonRegister.resx">
+      <DependentUpon>SaloonRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectSeat.resx">
+      <DependentUpon>SelectSeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffList.resx">
+      <DependentUpon>StaffList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffListesi.resx">
+      <DependentUpon>staffListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffRegister.resx">
+      <DependentUpon>staffRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket.resx">
+      <DependentUpon>Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticketcontrol.resx">
+      <DependentUpon>ticketcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_AdminLogin.resx">
+      <DependentUpon>UC_AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Ai.resx">
+      <DependentUpon>UC_Ai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Ai_Logined.resx">
+      <DependentUpon>UC_Ai_Logined.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Home.resx">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_HomeUnLogin.resx">
+      <DependentUpon>UC_HomeUnLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Login.resx">
+      <DependentUpon>UC_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Register.resx">
+      <DependentUpon>UC_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Seans.resx">
+      <DependentUpon>UC_Seans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Seans_Logined.resx">
+      <DependentUpon>UC_Seans_Logined.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Seat.resx">
+      <DependentUpon>UC_Seat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SeatSelect.resx">
+      <DependentUpon>UC_SeatSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Ticket.resx">
+      <DependentUpon>UC_Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Ticket_Logined.resx">
+      <DependentUpon>UC_Ticket_Logined.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsernewPanel.resx">
+      <DependentUpon>UsernewPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPanel.resx">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seat_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seat_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seat_busy.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
